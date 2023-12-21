@@ -13,6 +13,7 @@ form.addEventListener("submit", function(e){
     const pull = document.getElementById("pull");
     const deploy = document.getElementById("deploy");
     const security = document.getElementById("security");
+    const range = document.getElementById("range");
 
     console.log("First Name:", firstName.value);
     console.log("Last Name:", lastName.value);
@@ -21,9 +22,11 @@ form.addEventListener("submit", function(e){
     console.log("Pull Request:", pull.checked);
     console.log("Deployment:", deploy.checked);
     console.log("Security:", security.checked);
+    console.log("Range:", range.value);
 
     if(firstName.value !== "" || lastName.value !== "" || country.value !== ""){
         confirm("Are you sure you want to submit?")
+        alert("form submitted")
         firstName.value = ""
         lastName.value = ""
         country.value = ""
