@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom manipulation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.js">
+  </head>
+  <body>
+    <form id="form" action="">
+      <h2>User settings</h2>
+      <p id="first-para">Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="personal-info">
+        <h2>Personal Info</h2>
+        <input id="firstName" class="first-name" type="text" placeholder="First Name" required aria-required="true"/>
+        <input id="lastName" class="last-name" type="text" placeholder="Last Name" required/>
+        <div class="country">
+          <select name="" id="Country" required>
+            <option value="" disabled selected hidden>Country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Togo">Togo</option>
+          </select>
+        </div>
+        <hr id="horizontal-line" />
+      </div>
+      <h2>Notification</h2>
+      <div class="notification">
+        <div class="toggle-option">
+            <p>Weekly reports</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="week" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="toggle-option">
+            <p>Pull requests</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="pull" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="toggle-option">
+          <p>Deployment triggers</p>          <!-- Rounded switch -->
+          <label class="switch">
+            <input id="deploy" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+      </div>
+      <hr>
+      <h2>Security</h2>
+      <div class="security">
+        <p>Run security check upon log in</p>
+        <input id="security" type="checkbox">
+      </div>
+      <div class="slide">
+        <p>less</p><input id="range" type="range"> <p>more</p>
+      </div>
+      <hr>
+
+      <div class="btn">
+        <button class="btn1" type="submit">SAVE</button>
+        <BUtton class="btn2" type="reset">CANCEL</BUtton>
+      </div>
+                    
+    </form>
+
+    <!-- 
+    <input type="text">
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</p>
+    <button>Click me</button>
+    <button>Click me2</button>
+    <button>Click me3</button> -->
+    <!-- <h1>Hello from Mars!</h1> -->
+
+    <!-- <span class="text-desc2" id="main-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quos
+      eveniet.
+    </span>
+    <span class="text-desc">
+      Johnson veritatis, quam velit quos eligendi perferendis fugiat eveniet
+    </span>
+    <span id="without-style">
+      sapiente ratione assumenda iste repudiandae quidem dicta aliquid.
+      Voluptatibus, error?
+    </span> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
